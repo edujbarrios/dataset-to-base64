@@ -4,8 +4,7 @@ Convert an image dataset directory into a single Jsonnet file containing Base64-
 
 ## Repository structure
 
-- `scripts/dataset_to_base64_jsonnet.ps1`: Main conversion script.
-- `dataset_to_base64_jsonnet.ps1`: Backward-compatible wrapper that forwards to `scripts/`.
+- `dataset_to_base64_jsonnet.ps1`: Main conversion script.
 - `examples/sample_dataset_structure.jsonnet`: Example output structure.
 - `.gitattributes`: Jsonnet file attributes.
 
@@ -28,12 +27,6 @@ Optional parameters:
 
 - `-DatasetName "custom_name"`
 - `-IncludeAbsolutePaths`
-
-You can also call the script directly from `scripts/`:
-
-```powershell
-./scripts/dataset_to_base64_jsonnet.ps1 -DatasetDir "C:\data\images" -OutputFile "C:\out\dataset.jsonnet"
-```
 
 ## Output schema
 
