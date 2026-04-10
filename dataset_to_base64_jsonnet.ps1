@@ -9,10 +9,3 @@ if (-not (Test-Path -LiteralPath $targetScript -PathType Leaf)) {
 }
 
 & $targetScript @args
-
-$lastExitCodeVar = Get-Variable -Name LASTEXITCODE -Scope Global -ErrorAction SilentlyContinue
-if ($null -ne $lastExitCodeVar) {
-    exit $lastExitCodeVar.Value
-}
-
-exit 0
